@@ -8,9 +8,14 @@ export const Home = props => {
   const {username} = props
 
   return (
-    <div id='landing-page-body'>
-      <div>IDK</div>
-    </div>
+    <div id='home-container' >
+        <img id='home-logo' src='pkdev.png' />
+      <div id='home-right-container'>
+        <img id='home-profpic' src='blackwhiteprof.png' />
+        <div id='home-quote'>JUST CODE IT.</div>
+      </div>
+      </div>
+  
   )
 }
 

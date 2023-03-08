@@ -12,7 +12,7 @@ const Routes = () => {
 
 
     return (
-      <div>
+      <div id='landing-page-body'>
 
             <Route path="/home" component={Home} />
             <Redirect to="/home" />
