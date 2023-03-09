@@ -6,6 +6,11 @@ body {
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
+   background-image: url('chicagoBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 
@@ -19,10 +24,6 @@ body {
   align-items: center;
   top: 6vh;
   bottom: 6vh;
-  background-image: url('chicagoBackground.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   width: 100%;
 
 }
@@ -32,7 +33,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
 
-  width: 80%;
+  width: 70%;
   height: 80%;
   background: rgba(23, 22, 22, 0.7);
 
@@ -63,7 +64,7 @@ body {
 #home-quote {
   color: white;
   font-family: 'Futura';
-  font-size: 200%;
+  font-size: 4vw;
 }
 
 #home-profpic {
@@ -87,6 +88,20 @@ body {
   height: 6vh;
   align-items: center;
   width: 100%;
+  z-index: 1;
+
+}
+
+/* sidenav styling */
+
+#sidenav {
+  position: fixed;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  top: 6vh;
+  left: 0;
+  height: 88vh;
 
 }
 
@@ -102,4 +117,128 @@ body {
   align-items: center;
   width: 100%;
 
+}
+
+
+
+
+/* sidenav styling */
+.sidenav-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5vw;
+  width: 15vw;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.5em 0.74em;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sidenav-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+
+
+/* Navbar styling */
+.dropbtn {
+  height: 6vh
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family:  "Open Sans", sans-serif;;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* viewport conditions */
+@media (max-width: 480px) {
+  .sidenav-button {
+    display: none;
+  }
+  #home-right-container {
+    display: none;
+  }
+  #home-logo {
+    width: 80%
+  }
+}
+@media (min-width: 480px) {
+   .dropbtn {
+    display: none;
+  }
+  
+}
+
+
+/* Socialbar styling */
+
+#social-bar-container {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+#social-bar {
+    display: flex;
+    position: fixed;
+
+    width: 5vw;
+    height: 40vh;
+    flex-direction: column;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.social-bar-buttons {
+  width: 4vw;
+  margin: 4px;
+}
+
+#linkedin-social-bar-button {
+  width: 3.2vw;
 }

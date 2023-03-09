@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 const Footer = () => (
   <div id='footer'>
     <div>
-      testing
     </div>
   </div>
 )

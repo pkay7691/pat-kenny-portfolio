@@ -1,6 +1,7 @@
 import React from 'react'
 import {withRouter, Route, Switch, Redirect} from 'react-router-dom'
 import Home from './components/Home';
+import Sidenav from './components/Sidenav';
 
 /**
  * COMPONENT
