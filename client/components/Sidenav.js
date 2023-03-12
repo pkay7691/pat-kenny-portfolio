@@ -8,8 +8,8 @@ const Sidenav = () => (
     <Link to='/home'><button className='sidenav-button'>Home</button></Link>
       <Link to='/about'><button className='sidenav-button'>About</button></Link>
       <Link to='/projects'><button className='sidenav-button'>Projects</button></Link>
-      <Link to='/contact'><button className='sidenav-button'>Contact</button></Link>
-      <Link to='/resume'><button className='sidenav-button'>Resume</button></Link>
+      <a href='mailto: patrickmkenny91@gmail.com'><button className='sidenav-button'>Contact</button></a>
+      <a href='about-me.jpg' download><button className='sidenav-button'>Resume</button></a>
   </div>
 )
 
