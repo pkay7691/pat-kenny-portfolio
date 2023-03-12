@@ -2,6 +2,8 @@ import React from 'react'
 import {Route, Redirect} from 'react-router-dom'
 import Home from './components/Home';
 import Sidenav from './components/Sidenav';
+import Aboutme from './components/Aboutme';
+import Projects from './components/Projects';
 
 /**
  * COMPONENT
@@ -16,7 +18,9 @@ const Routes = () => {
       <div id='landing-page-body'>
 
             <Route path="/home" component={Home} />
-            <Redirect to="/home" />
+            <Route path='/about' component={Aboutme} />
+            <Route path='/projects' component={Projects} />
+
       </div>
     )
   }

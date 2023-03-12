@@ -25,6 +25,7 @@ body {
   top: 6vh;
   bottom: 6vh;
   width: 100%;
+  z-index: -1;
 
 }
 
@@ -141,6 +142,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  z-index: 1;
 }
 
 .sidenav-button:active {
@@ -241,4 +243,36 @@ body {
 
 #linkedin-social-bar-button {
   width: 3.2vw;
+}
+
+
+/* about me styling */
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 80%;
+  background: rgba(23, 22, 22, 0.7);
+
+}
+
+
+.right-container {
+     display: flex;
+     height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    overflow: scroll;
+    color: whitesmoke;
+    font-family:  "Open Sans", sans-serif;
+
+}
+
+.about-me-pic {
+  width: 30%;
+  
 }
