@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Route, Redirect} from 'react-router-dom'
 import Home from './components/Home';
 import Sidenav from './components/Sidenav';
@@ -11,13 +11,19 @@ import Projects from './components/Projects';
 const Routes = () => {
 
 
+  const [firstRender, setFirstRender] = useState(true)
 
+  const route = [
+    {path: '/', name: 'Home'}
+  ]
 
 
     return (
       <div id='landing-page-body'>
-
-            <Route path="/home" component={Home} />
+            <Route exact path='/'>
+              <Redirect to='/home' />
+            </Route>
+            <Route path="/home"  render={() => <Home firstRender={firstRender} setFirstRender={setFirstRender} />}/>
             <Route path='/about' component={Aboutme} />
             <Route path='/projects' component={Projects} />
 

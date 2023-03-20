@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -7,6 +7,8 @@ import Routes from './Routes'
 import Socialbar from './components/Socialbar'
 
 const App = () => {
+  
+
   return (
     <div>
       <Navbar />

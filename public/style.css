@@ -6,7 +6,7 @@ body {
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
-   background-image: url('chicagoBackground.jpg');
+   background-image: url('background1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -24,8 +24,10 @@ body {
   align-items: center;
   top: 6vh;
   bottom: 6vh;
-  width: 100%;
-  z-index: -1;
+  left: 15vw;
+  right: 15vw;
+
+  /* z-index: -1; */
 
 }
 
@@ -33,47 +35,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
-  width: 70%;
-  height: 80%;
-  background: rgba(23, 22, 22, 0.7);
-
-}
-
-
-#home-right-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-
-#home-left-text-container {
-  display: flex;
-  width: 30%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #080808;
-  width: 70%;
-}
+  width: 80%;
+  height: 100%;
 
-
-
-#home-quote {
-  color: white;
-  font-family: 'Futura';
-  font-size: 4vw;
-}
-
-#home-profpic {
-  width: 50%;
 }
 
 #home-logo {
-  width: 40%
+  height: 80%;
 
 }
 
@@ -142,7 +111,6 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  z-index: 1;
 }
 
 .sidenav-button:active {
@@ -150,6 +118,7 @@ body {
   top: 5px;
   left: 5px;
 }
+
 
 
 
@@ -217,9 +186,11 @@ body {
 
 #social-bar-container {
   display: flex;
+  width: 5vw;
   height: 100vh;
   justify-content: flex-end;
   align-items: center;
+  float: right;
 
 }
 
@@ -254,25 +225,19 @@ body {
   justify-content: space-evenly;
   width: 70%;
   height: 80%;
-  background: rgba(23, 22, 22, 0.7);
 
 }
 
 
-.right-container {
-     display: flex;
-     height: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    overflow: scroll;
-    color: whitesmoke;
-    font-family:  "Open Sans", sans-serif;
-
-}
 
 .about-me-pic {
-  width: 30%;
+  width: 40%;
   
+}
+
+.about-me-bio {
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  width: 50%;
+  font-size: 1rem
 }

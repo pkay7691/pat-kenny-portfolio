@@ -7,12 +7,21 @@ import {connect} from 'react-redux'
 export const Projects = props => {
   const {username} = props
 
+  const projects =[
+    {
+      name: 'Dev-Up-Social',
+      description: ''
+  }
+  ]
+
   return (
     <div className='main-container'>
-        <img className='about-me-pic' src='about-me.jpg' />
+      <div>Arrow</div>
+      <img className='about-me-pic' src='pkdev.png' />
     <div className='right-container'>
 
       </div>
+      <div>Arrow</div>
       </div>
   
   )
