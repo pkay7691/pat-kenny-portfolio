@@ -1,19 +1,30 @@
 @import url(//db.onlinewebfonts.com/c/db7c22c7cd9995cd1cf628cbb83af43c?family=Futura);
 
-@font-face {font-family: "Futura"; src: url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.eot"); src: url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.woff") format("woff"), url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.svg#Futura") format("svg"); }
+@font-face {
+  font-family: "Futura";
+  src: url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.eot");
+  src: url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/db7c22c7cd9995cd1cf628cbb83af43c.svg#Futura")
+      format("svg");
+}
 
 body {
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
-   background-image: url('background1.jpg');
+  background-image: url("background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
-
-
 
 /* landing page styling */
 
@@ -28,7 +39,6 @@ body {
   right: 15vw;
 
   /* z-index: -1; */
-
 }
 
 #home-container {
@@ -38,15 +48,11 @@ body {
   flex-direction: column;
   width: 80%;
   height: 100%;
-
 }
 
 #home-logo {
   height: 80%;
-
 }
-
-
 
 /* navbar styling */
 #navbar {
@@ -59,7 +65,6 @@ body {
   align-items: center;
   width: 100%;
   z-index: 1;
-
 }
 
 /* sidenav styling */
@@ -72,7 +77,6 @@ body {
   top: 6vh;
   left: 0;
   height: 88vh;
-
 }
 
 /* footer styling */
@@ -86,11 +90,7 @@ body {
   height: 6vh;
   align-items: center;
   width: 100%;
-
 }
-
-
-
 
 /* sidenav styling */
 .sidenav-button {
@@ -106,7 +106,8 @@ body {
   padding: 0.5em 0.74em;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
   position: relative;
   user-select: none;
   -webkit-user-select: none;
@@ -119,13 +120,9 @@ body {
   left: 5px;
 }
 
-
-
-
-
 /* Navbar styling */
 .dropbtn {
-  height: 6vh
+  height: 6vh;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -140,13 +137,13 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  font-family:  "Open Sans", sans-serif;;
+  font-family: "Open Sans", sans-serif;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -154,13 +151,14 @@ body {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 /* viewport conditions */
 @media (max-width: 480px) {
@@ -171,16 +169,14 @@ body {
     display: none;
   }
   #home-logo {
-    width: 80%
+    width: 80%;
   }
 }
 @media (min-width: 480px) {
-   .dropbtn {
+  .dropbtn {
     display: none;
   }
-  
 }
-
 
 /* Socialbar styling */
 
@@ -191,20 +187,19 @@ body {
   justify-content: flex-end;
   align-items: center;
   float: right;
-
 }
 
 #social-bar {
-    display: flex;
-    position: fixed;
+  display: flex;
+  position: fixed;
 
-    width: 5vw;
-    height: 40vh;
-    flex-direction: column;
-    background-color: whitesmoke;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 15px 0px 0px 15px;
+  width: 5vw;
+  height: 40vh;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .social-bar-buttons {
@@ -216,7 +211,6 @@ body {
   width: 3.2vw;
 }
 
-
 /* about me styling */
 
 .main-container {
@@ -225,19 +219,26 @@ body {
   justify-content: space-evenly;
   width: 70%;
   height: 80%;
-
 }
-
-
 
 .about-me-pic {
   width: 40%;
-  
 }
 
 .about-me-bio {
   color: whitesmoke;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   width: 50%;
-  font-size: 1rem
+  font-size: 1rem;
+}
+
+/* transition styling */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
 }
