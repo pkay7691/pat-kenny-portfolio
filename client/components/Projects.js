@@ -21,7 +21,7 @@ export const Projects = props => {
     <div className='right-container'>
 
       </div>
-      <div>Arrow</div>
+      <div>Arroww</div>
       </div>
   
   )
